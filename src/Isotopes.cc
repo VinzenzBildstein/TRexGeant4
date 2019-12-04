@@ -22,7 +22,11 @@ Isotopes::Isotopes(const char* massFileName, bool debug) {
 	double dmass;
 	std::ifstream massFile;
 	massFile.open(massFileName,std::ios::in);
-
+	
+	if(!massFile.is_open()) {
+		throw std::invalid_argument("Unable to open mass file");
+	}
+	
 	while(!massFile.bad() && !massFile.eof()) {
 		massFile>>z;
 		massFile>>n;
