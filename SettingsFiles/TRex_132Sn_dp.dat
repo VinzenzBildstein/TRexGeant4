@@ -27,7 +27,7 @@ RecoilName:		1H
 RecoilZ:		1
 RecoilA:		1
 
-TargetMaterialName:	1PE
+TargetMaterialName:	DeuteratedPE
 
 TargetThickness:	5.0		in mg/cm2
 TargetMaterialDensity:	0.92		in g/cm3
